@@ -130,6 +130,16 @@ function loop(){
 }
 loop();
 
+const song = document.getElementById("song");
+const btn = document.getElementById("unmuteBtn");
+
+btn.addEventListener("click", async () => {
+  song.muted = false;
+  song.volume = 1;
+  await song.play();
+  btn.style.display = "none";
+});
+
 // views counter saved in browser
 const viewEl = document.getElementById("views");
 let views = Number(localStorage.getItem("shrey_views") || 28) + 1;
