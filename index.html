@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shrey Shukla | Minecraft Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="bg"></canvas>
+
+  <!-- Add your song here: assets/song.mp3 -->
+  <audio id="song" autoplay loop muted>
+    <source src="assets/song.mp3" type="audio/mpeg" />
+  </audio>
+
+  <button id="unmuteBtn">🔊 Tap for Sound</button>
+
+  <aside class="side-nav">
+    <a href="#home">⌂<span>Home</span></a>
+    <a href="#about">👤<span>About</span></a>
+    <a href="#skills">⌘<span>Skills</span></a>
+  </aside>
+
+  <main id="home" class="screen">
+    <section class="profile-box">
+      <div class="top-icons">
+        <span>♫</span>
+        <span>🔊</span>
+      </div>
+
+      <div class="photo-ring">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <img src="assets/profile.jpg" alt="Shrey Shukla" />
+      </div>
+
+      <h1 class="glitch" data-text="SHREY SHUKLA">SHREY SHUKLA</h1>
+      <p class="role">— Minecraft Developer —</p>
+
+      <p class="bio">
+        Hello, my name is <b>Shrey Shukla</b><br>
+        I'm a Minecraft Developer with <b>2.5 years</b> of experience in server
+        development, configurations and management.
+      </p>
+
+      <div class="user-card">
+        <img src="assets/profile.jpg" alt="profile" />
+        <div>
+          <h2>shrey_shukla <span>SKLL</span></h2>
+          <p>👁 Total users seen: <b id="views">29</b></p>
+        </div>
+      </div>
+
+      <div class="down">⌄</div>
+
+      <div class="music-bar">
+        <div class="disc">♫</div>
+        <div>
+          <h3>Cyber Highway</h3>
+          <p>Neon Beats</p>
+        </div>
+        <div class="wave">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          <i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+        <div class="pause">Ⅱ</div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
